@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titanic Passenger Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <script src="script.js" defer></script>
+
+    <style>
+        table.dataTable {
+            border-collapse: separate;
+            border-spacing: 0;
+            border: none;
+            font-size: 0.95rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        table.dataTable thead {
+            background: linear-gradient(to right, #4f6ef7, #6fb1fc);
+            color: white;
+        }
+
+        table.dataTable thead th {
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border: none;
+        }
+
+        table.dataTable tbody td {
+            padding: 12px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        table.dataTable tbody tr:nth-child(even) {
+            background-color: #f9fbff;
+        }
+
+        table.dataTable tbody tr:hover {
+            background-color: #e4f0ff;
+            cursor: pointer;
+        }
+
+        .dataTables_filter input {
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            margin-left: 5px;
+        }
+
+        .dataTables_length select {
+            border-radius: 6px;
+            padding: 4px 8px;
+        }
+
+        .dataTables_paginate .paginate_button {
+            border-radius: 6px;
+            padding: 6px 12px;
+            margin: 2px;
+            border: none;
+            background-color: #f0f4ff;
+            color: #3c6ef3;
+        }
+
+        .dataTables_paginate .paginate_button.current {
+            background-color: #3c6ef3;
+            color: white !important;
+        }
+
+        .dataTables_info {
+            font-size: 0.875rem;
+            padding-top: 10px;
+        }
+    </style>
+
+</head>
+
+<!-- <script src="script.js" defer></script>
+</head> -->
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">🚢 Titanic Passenger Data</h1>
+        <div class="table-responsive">
+            <table id="titanic-table" class="table table-bordered table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Survived</th>
+                        <th>Age</th>
+                        <th>Sex</th>
+                        <th>Ticket</th>
+                        <th>Fare</th>
+                        <th>Embarked</th>
+                        <th>Homedest</th>
+                    </tr>
+                </thead>
+                <tbody id="users-table-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
