@@ -34,7 +34,7 @@ docker compose up --build
 
 ### ✅ 專案使用方式
 
-在遊覽器上輸入
+在Browser上輸入
 ```sh
 IP:8081
 ```
